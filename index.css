@@ -1,54 +1,62 @@
-* {
-    margin: 0%;
-    padding: 5px;
+#maindiv {
+    width: 100%;
 
 }
 
 #navbar {
     border: 0px solid black;
-    padding: 10px;
+    padding: 20px;
     background-color: rgb(255, 255, 255);
     display: flex;
+    height: 40px;
     justify-content: space-between;
-    margin-top: -10px;
-    width: 99.3%;
-    margin-left: -10px;
+    top: 0;
+    left: 0;
+    width: 100%;
     position: fixed;
+
+    scroll-behavior: smooth;
 
 }
 
+
 h2 {
     color: rgb(17, 0, 103);
+    margin-top: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #A {
     display: flex;
-    gap: 40px;
-    align-items: center;
+    gap: 30px;
+    font-weight: bold;
+    padding-right: 40px;
 }
 
 #A a {
     text-decoration: none;
     font-size: 18px;
     color: #333;
+    margin-top: 10px;
     transition: 0.6s;
 }
 
 #A a:hover {
-    color: #004af7;
+    color: #0651ff;
     font-size: 19px;
-    transform: scale(1.05);
+    transition: 0.2s;
+    transform: scale(1.06);
     cursor: pointer;
 }
 
 #main {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: rgb(221, 236, 249);
-    width: 100%;
-    margin-left: -5px;
-    height: 600px;
+    max-width: 1400px;
+    margin: auto;
 }
+
 
 #one {
     margin-top: 200px;
@@ -62,6 +70,19 @@ h2 {
 
 #three {
     font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+#github {
+    margin-left: -970px;
+    font-size: 20px;
+
+}
+
+#linkedin {
+    font-size: 20px;
+    margin-left: 20px;
 }
 
 #img {
@@ -69,8 +90,8 @@ h2 {
     border-radius: 50%;
     height: 400px;
     width: 400px;
-    margin-top: 110px;
-    margin-left: 200px;
+    margin-top: 115px;
+    margin-left: 180px;
 }
 
 #img:hover {
@@ -83,7 +104,7 @@ h2 {
     width: 150px;
     padding: 5px;
     color: #007bff;
-    margin-top: 20px;
+    margin-top: 45px;
     border-radius: 5px;
 }
 
@@ -115,7 +136,7 @@ h2 {
 
 #six {
     margin-top: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-left: 50px;
 }
 
@@ -417,12 +438,14 @@ h2 {
     border-radius: 7px;
     padding: 10px;
 }
-#experience_box:hover{
+
+#experience_box:hover {
     transition: 0.6s;
     transform: scale(1.06);
     box-shadow: 2px 3px 5px 1px gray;
-   
+
 }
+
 #experience_details {
     display: flex;
     gap: 310px;
@@ -451,196 +474,221 @@ p {
     color: #004af7;
     background-color: rgb(209, 231, 250);
 }
-#Contact{
-    border:0px solid black;
+
+#Contact {
+    border: 0px solid black;
     margin-top: 80px;
     background-color: aliceblue;
     text-align: center;
+    padding: 10px;
 }
-#a{
+
+#a {
     margin-top: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
-#b{
+
+#b {
     border: 0px solid black;
     background-color: aliceblue;
     display: flex;
     padding-bottom: 40px;
 }
-#c{
-    border:0px solid black;
+
+#c {
+    border: 0px solid black;
     width: 650px;
     padding: 20px;
 }
-#d{
+
+#d {
     margin-top: 30px;
     margin-left: 20PX;
 }
-#phone{
-    font-size: 20px ;
-    margin-top: 6px;
+
+.icon {
+    margin-top: 10px;
     margin-left: 20px;
 }
-#number{
-    margin-left: 360px;
-    margin-top: 6px;
-    font-size: 20px ;
+
+#phone {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#number {
+    margin-left: 400px;
+    margin-top: 20px;
+    font-size: 15px;
 
 }
-#e{
+
+#e {
     border: 0px solid black;
     background-color: white;
     width: 600px;
     display: flex;
-     margin: 20px;
-     border-radius: 7px;
-   
+    margin: 20px;
+    border-radius: 7px;
+
 }
-#e:hover{
+
+#e:hover {
     transform: scale(1.02);
     transition: 0.8s;
-    box-shadow: 2px 3px 5px 1px gray;   
+    box-shadow: 2px 3px 5px 1px gray;
 }
-#Email{
-    font-size: 20px ;
+
+#Email {
+    font-size: 15px;
     margin-top: 6px;
     margin-left: 10px;
 }
-#Emailid{
-    margin-left: 185px;
-    margin-top: 6px;
-    font-size: 20px ;
+
+#Emailid {
+    margin-left: 260px;
+    margin-top: 20px;
+    font-size: 15px;
+
 
 }
-#f{
+
+#f {
     border: 0px solid black;
     width: 600px;
     background-color: white;
     display: flex;
     margin: 20px;
     border-radius: 7px;
-  
+
 }
-#f:hover{
+
+#f:hover {
     transform: scale(1.02);
     transition: 0.8s;
-    box-shadow: 2px 3px 5px 1px gray;   
+    box-shadow: 2px 3px 5px 1px gray;
 }
 
-#Hisar{
-    font-size: 20px ;
-    margin-top: 6px;
-    margin-left: 270px;
+#Hisar {
+    margin-left: 335px;
+    margin-top: 20px;
+    font-size: 15px;
 }
-#Location{
+
+#Location {
     margin-left: 20px;
-    margin-top: 6px;
-    font-size: 20px ;
+    margin-top: 20px;
+    font-size: 15px;
 
 }
-#g{
+
+#g {
     border: 0px solid black;
     border-radius: 7px;
     width: 600px;
     display: flex;
-     margin: 20px; 
- background-color: white; 
-     
+    margin: 20px;
+    background-color: white;
+
 }
-#g:hover{
+
+#g:hover {
     transform: scale(1.02);
     transition: 0.8s;
-    box-shadow: 2px 3px 5px 1px gray;   
+    box-shadow: 2px 3px 5px 1px gray;
 }
-#FOLLOW{
-    margin-left: 20px;
-    margin-top: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#github{
-    margin-left: 20px;
-    font-size: 20px;
-}
-#linkedin{
-font-size: 20px;
-}
-#details{
+
+#details {
     border: 0px solid black;
     width: 500px;
     border-radius: 7px;
     background-color: white;
     padding: 10px;
+    margin-left: 30px;
+    margin-top: 40px;
 
 }
-#msg{
+
+#msg {
     margin-top: 10px;
-    
+
 }
-#name{
+
+#name {
     font-size: 18px;
     margin-top: 20px;
     margin-left: 20px;
 }
-#Name{
+
+#Name {
     border: 0px solid black;
-     box-shadow: 2px 3px 5px 1px gray;   
-     border-radius: 10px;
+    box-shadow: 2px 3px 5px 1px gray;
+    border-radius: 10px;
     width: 450px;
     margin-left: 20px;
     height: 40px;
     font-size: 18px;
 }
-#Name:hover{
-    box-shadow: 2px 3px 5px 1px gray;   
+
+#Name:hover {
+    box-shadow: 2px 3px 5px 1px gray;
     transform: scale(1.03);
     transition: 0.5s;
 }
-#Email{
+
+#Email {
     font-size: 18px;
     margin-left: 20px;
     margin-top: 20px;
 }
-#Email2{
+
+#Email2 {
     border: 0px solid black;
-     box-shadow: 2px 3px 5px 1px gray;   
-     border-radius: 10px;
+    box-shadow: 2px 3px 5px 1px gray;
+    border-radius: 10px;
     width: 450px;
     margin-left: 20px;
     height: 40px;
     font-size: 18px;
 }
-#Email2:hover{
-    box-shadow: 2px 3px 5px 1px gray;   
+
+#Email2:hover {
+    box-shadow: 2px 3px 5px 1px gray;
     transform: scale(1.03);
     transition: 0.5s;
 }
 
 
-#Massage{
+#Massage {
     font-size: 18px;
     margin-left: 20px;
     margin-top: 20px;
 }
-#Massage2{
+
+#Massage2 {
     border: 0px solid black;
-     box-shadow: 2px 3px 5px 1px gray;   
-     border-radius: 10px;
+    box-shadow: 2px 3px 5px 1px gray;
+    border-radius: 10px;
     width: 450px;
     margin-left: 20px;
     height: 40px;
     font-size: 18px;
 
 }
-#Massage2:hover{
-    box-shadow: 2px 3px 5px 1px gray;   
+
+#Massage2:hover {
+    box-shadow: 2px 3px 5px 1px gray;
     transform: scale(1.03);
     transition: 0.5s;
 }
-#msg_send{
+
+#msg_send {
     text-align: center;
 }
-#Send{
+
+#Send {
     border: 0px solid black;
     margin-top: 50px;
     font-size: 20px;
@@ -651,127 +699,22 @@ font-size: 20px;
     margin-left: 12px;
     border-radius: 10px;
 }
-#Send:hover{
-    background-color:#004af7;
+
+#Send:hover {
+    background-color: #004af7;
     transition: 0.4s;
 }
 
-#Z{
+#Z {
     text-align: center;
     border: 1px solid black;
     background-color: #333;
     padding: 20px;
-    width: 99.3%;
+    width: auto;
     margin-left: -10px;
 }
-#Z1{
+
+#Z1 {
     font-size: 18px;
     color: white;
-}
-
-
-/* Mobile Devices (Up to 768px) */
-@media (max-width: 600px) {
-    #navbar {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
-        position: static;
-        width: 100%;
-    }
-
-    #A {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    #main {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-    }
-
-    #IMG_0536 img {
-        width: 250px;
-        height: 250px;
-        margin: 20px auto;
-    }
-
-    #img {
-        margin: 20px auto;
-        height: 250px;
-        width: 250px;
-    }
-
-    #one {
-        margin: 20px auto;
-        text-align: center;
-    }
-
-    #seconde {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    #icons, #second_icon {
-        flex-direction: column;
-        gap: 10px;
-        margin-left: 0;
-    }
-
-    #eight, #nine, #ten, #eleven {
-        margin-left: 0;
-        text-align: left;
-    }
-
-    #twelve {
-        width: 90%;
-        margin: 20px auto;
-    }
-
-    #three_page, #fourth {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #html, #css, #js, #react, #pythen, #sql {
-        width: 90%;
-        margin-left: 0;
-    }
-
-    #experience_box {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #experience_details {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-
-    #all_lang {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-
-    #b {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #c, #details {
-        width: 90%;
-    }
-
-    #Name, #Email2, #Massage2, #Send {
-        width: 90%;
-    }
-
-    #Z {
-        width: 100%;
-        margin-left: 0;
-    }
 }
